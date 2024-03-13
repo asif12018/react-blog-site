@@ -1,0 +1,102 @@
+[
+    {
+        "Id": 1,
+        "cover": "https://picsum.photos/id/1015/600/350",
+        "title": "The Secrets of the Ancient Forest",
+        "author": "Emily Blackwood",
+        "author_img": "https://randomuser.me/api/portraits/women/32.jpg",
+        "posted_date": "2024-03-05",
+        "reading_time": 8,
+        "hashtags": ["#fantasy", "#adventure", "#mystery"]
+    },
+    {
+        "Id": 2,
+        "cover": "https://picsum.photos/id/1020/600/350",
+        "title": "The Rise of the Tech Guru",
+        "author": "John Peterson",
+        "author_img": "https://randomuser.me/api/portraits/men/76.jpg",
+        "posted_date": "2024-03-12",
+        "reading_time": 5,
+        "hashtags": ["#technology", "#innovation", "#biography"]
+    },
+    {
+        "Id": 3,
+        "cover": "https://picsum.photos/id/1003/600/350", 
+        "title": "A Journey Through Flavors",
+        "author": "Sarah Dubois",
+        "author_img": "https://randomuser.me/api/portraits/women/55.jpg",
+        "posted_date": "2024-03-09",
+        "reading_time": 12,
+        "hashtags": ["#food" ,"#recipes" ,"#travel"]
+    },
+    {
+        "Id": 4,
+        "cover": "https://picsum.photos/id/1010/600/350",
+        "title": "The Power of Mindfulness",
+        "author": "Dr. Michael Lee",
+        "author_img": "https://randomuser.me/api/portraits/men/81.jpg",
+        "posted_date": "2024-03-02",
+        "reading_time": 6,
+        "hashtags":[ "#wellness", "#selfcare","#mentalhealth"] 
+    },
+    {
+        "Id": 5,
+        "cover": "https://picsum.photos/id/1025/600/350",
+        "title": "Cosmic Wonders: A Stargazer's Guide",
+        "author": "Professor Amelia Evans",
+        "author_img": "https://randomuser.me/api/portraits/women/12.jpg",
+        "posted_date": "2024-03-10",
+        "reading_time": 9,
+        "hashtags": ["#science", "#astronomy", "#space"]
+    },
+    {
+        "Id": 6,
+        "cover": "https://picsum.photos/id/1040/600/350",
+        "title": "Unraveling Historical Mysteries",
+        "author": "Dr. Isabella Carter",
+        "author_img": "https://randomuser.me/api/portraits/women/44.jpg",
+        "posted_date": "2024-03-01",
+        "reading_time": 11,
+        "hashtags": ["#history", "#archaeology", " #exploration"]
+    },
+    {
+        "Id": 7,
+        "cover": "https://picsum.photos/id/1050/600/350",
+        "title": "Crafting the Perfect Home",
+        "author": "Jennifer Stewart",
+        "author_img": "https://randomuser.me/api/portraits/women/87.jpg",
+        "posted_date": "2024-03-08",
+        "reading_time": 7,
+        "hashtags": ["#DIY", "#homedecor", " #interiordesign"]
+    },
+    {
+        "Id": 8,
+        "cover": "https://picsum.photos/id/1060/600/350",
+        "title": "The Language of the Soul",
+        "author": "Maya Patel",
+        "author_img": "https://randomuser.me/api/portraits/women/21.jpg",
+        "posted_date": "2024-03-06",
+        "reading_time": 4,
+        "hashtags": ["#poetry" ,"#writing" ,"#expression"]
+    },
+    {
+        "Id": 9,
+        "cover": "https://picsum.photos/id/1070/600/350",
+        "title": "Navigating Financial Freedom",
+        "author": "Alex Miller",
+        "author_img": "https://randomuser.me/api/portraits/men/32.jpg",
+        "posted_date": "2024-03-13",
+        "reading_time": 10,
+        "hashtags": ["#finance", "#investment", "#budgeting"]
+    }, 
+    {
+        "Id": 10,
+        "cover": "https://picsum.photos/id/1080/600/350",
+        "title": "Wildlife Through the Lens",
+        "author": "Thomas Reed",
+        "author_img": "https://randomuser.me/api/portraits/men/92.jpg",
+        "posted_date": "2024-03-03",
+        "reading_time": 5,
+        "hashtags": ["#nature", "#photography", "#conservation"]
+    } 
+]
