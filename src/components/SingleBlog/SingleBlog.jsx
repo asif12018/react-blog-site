@@ -48,7 +48,7 @@ const SingleBlog = ({blog,handleAddToBookmark,handleMarkAsRead}) => {
             <p className='flex gap-5'>{hashtags.map((hashtag, idx)=><span key={idx}>{hashtag}</span>)}</p>
             <br />
             {
-              read == false ? <button className='text-lg text-[#6047EC] font-bold border-b-2 border-[#6047EC]' onClick={()=>{
+              read == false ? <button disabled={btn == false && true} className='text-lg text-[#6047EC] font-bold border-b-2 border-[#6047EC]' onClick={()=>{
                 handleMarkAsRead(reading_time,Id)
                 handleReadHideBtn(true);
               }}>Mark as read</button> : <button disabled className='text-lg text-[#545261] font-bold border-b-2 border-[#545261]' > Readed</button>

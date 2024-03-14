@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import { useEffect } from "react";
 import { useState } from "react";
@@ -5,13 +6,17 @@ import SingleBlog from "../SingleBlog/SingleBlog";
 import PropTypes from 'prop-types';
 
 
-const Blogs = ({handleAddToBookmark,handleMarkAsRead}) => {
+const Blogs = ({handleAddToBookmark,handleMarkAsRead,setOldData}) => {
     const [blogs,setBlogs] = useState([]);
     useEffect(()=>{
         fetch('blogs.json')
         .then(res => res.json())
-        .then(data=>setBlogs(data))
+        .then(data=>{
+            setBlogs(data)
+            setOldData(data)
+        })
     },[])
+    
     
     return (
         <div className="w-2/3">
