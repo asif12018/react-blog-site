@@ -1,9 +1,25 @@
 import PropTypes from 'prop-types';
+import { useState } from 'react';
 import { PiBookmarkSimpleLight } from "react-icons/pi";
 
-const SingleBlog = ({blog,handleAddToBookmark}) => {
+const SingleBlog = ({blog,handleAddToBookmark,handleMarkAsRead}) => {
     
-    const {title, cover, author, author_img, reading_time,posted_date,hashtags} = blog;
+    const {title, cover, author, author_img, reading_time,posted_date,hashtags,Id} = blog;
+    
+    
+    //hide bookmark btn
+    const [btn,setBtn] = useState(false);
+    //hide bookmark btn function
+    const handleHideBtn = (value) =>{
+      setBtn(value);
+      
+    }
+    //hide mark as read state
+    const [read, setRead] = useState(false)
+    // hide mark as read function
+    const handleReadHideBtn = (value) =>{
+      setRead(value);
+    }
     
     return (
         <div className='mb-20'>
@@ -21,16 +37,28 @@ const SingleBlog = ({blog,handleAddToBookmark}) => {
 
                 <div className='flex items-center gap-2'>
                    <p>{reading_time} min read</p>
-                   <button onClick={()=>handleAddToBookmark(title)} className='text-2xl  '><PiBookmarkSimpleLight /></button>
+                   {
+                    btn == true || <button onClick={()=>{handleAddToBookmark(blog)
+                      handleHideBtn(true) 
+                     }} className='text-2xl  '><PiBookmarkSimpleLight /></button>
+                   }
                 </div>
             </div>
             <h2 className="text-4xl font-bold">{title}</h2>
             <p className='flex gap-5'>{hashtags.map((hashtag, idx)=><span key={idx}>{hashtag}</span>)}</p>
+            <br />
+            {
+              read == false ? <button className='text-lg text-[#6047EC] font-bold border-b-2 border-[#6047EC]' onClick={()=>{
+                handleMarkAsRead(reading_time,Id)
+                handleReadHideBtn(true);
+              }}>Mark as read</button> : <button disabled className='text-lg text-[#545261] font-bold border-b-2 border-[#545261]' > Readed</button>
+            }
         </div>
     );
 };
 SingleBlog.propTypes = {
   blog: PropTypes.object.isRequired,
-  handleAddToBookmark: PropTypes.func.isRequired
+  handleAddToBookmark: PropTypes.func.isRequired,
+  handleMarkAsRead: PropTypes.func
 }
 export default SingleBlog;

@@ -3,7 +3,7 @@
 
 
 const SingleBookMark = ({bookmark}) => {
-    console.log(bookmark)
+    
     return (
         <div className="rounded-xl bg-white h-[98px] mx-6 flex justify-center items-center">
             <h1 className="font-bold">{bookmark}</h1>
